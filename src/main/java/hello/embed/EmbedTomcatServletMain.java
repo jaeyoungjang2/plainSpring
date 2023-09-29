@@ -18,7 +18,8 @@ public class EmbedTomcatServletMain {
         tomcat.setConnector(connector);
         //서블릿 등록
         Context context = tomcat.addContext("", "/");
-        //== 코드 추가 시작==
+
+        //== LifecycleException 처리 코드 추가 시작==
         File docBaseFile = new File(context.getDocBase());
         if (!docBaseFile.isAbsolute()) {
             docBaseFile = new File(((org.apache.catalina.Host)
@@ -26,6 +27,7 @@ public class EmbedTomcatServletMain {
         }
         docBaseFile.mkdirs();
         //== 코드 추가 종료==
+
         tomcat.addServlet("", "helloServlet", new HelloServlet());
         context.addServletMappingDecoded("/hello-servlet", "helloServlet");
         tomcat.start();
