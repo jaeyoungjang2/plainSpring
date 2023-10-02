@@ -1,9 +1,9 @@
-package hello;
+package hello.boot;
 
-import hello.boot.MySpringApplication;
-import hello.boot.MySpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 @MySpringBootApplication
+@ComponentScan(basePackages = "hello")
 public class MySpringBootMain {
     public static void main(String[] args) {
         System.out.println("MySpringBootMain.main");
