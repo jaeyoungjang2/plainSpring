@@ -1,4 +1,4 @@
-package hello.profile;
+package hello.profile.postconstruct;
 
 import jakarta.annotation.PostConstruct;
 import lombok.extern.slf4j.Slf4j;
