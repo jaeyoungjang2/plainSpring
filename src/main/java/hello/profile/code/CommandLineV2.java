@@ -1,4 +1,4 @@
-package hello.profile;
+package hello.profile.code;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.ApplicationArguments;
