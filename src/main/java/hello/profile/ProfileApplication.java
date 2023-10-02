@@ -7,7 +7,8 @@ import org.springframework.context.annotation.Import;
 
 //@Import(MyDataSourceEnvConfig.class)
 //@Import(MyDataSourceValueConfig.class)
-@Import(MyDataSourceConfigV1.class)
+//@Import(MyDataSourceConfigV1.class)
+@Import(MyDataSourceConfigV2.class)
 @SpringBootApplication(scanBasePackages = "hello.profile")
 public class ProfileApplication {
 

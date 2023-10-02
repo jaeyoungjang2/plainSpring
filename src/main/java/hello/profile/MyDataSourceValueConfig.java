@@ -9,7 +9,7 @@ import java.time.Duration;
 import java.util.List;
 
 @Slf4j
-@Configuration
+//@Configuration
 public class MyDataSourceValueConfig {
     @Value("${my.datasource.url}")
     private String url;

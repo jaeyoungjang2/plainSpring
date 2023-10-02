@@ -7,7 +7,7 @@ import org.springframework.core.env.Environment;
 import java.time.Duration;
 import java.util.List;
 
-@Configuration
+//@Configuration
 public class MyDataSourceEnvConfig {
     private final Environment env;
 
